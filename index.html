@@ -1,10 +1,85 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Page Title</title>
+</head>
 <body>
 
-<h1>My First Heading</h1>
+<h1>JOHN RAFAEL MORALES</h1>
+<br>
+<br>
 
-<p>My first paragraph.</p>
+<h2>CONTACT</h2>
+<p>Contact number:639304093831</p>
+<p>Email Address:zetrehjohn@gmail.com</p>
+<p>Address:238 Florinda comp. Biñan Laguna</p>
+<br>
+<br>
 
+<h3>ABOUT ME</h3>
+<p>Hardworking and reliable individual with strong willingness to learn and follow instructions accurately. Physically fit, detail-oriented, and committed to maintaining safety and cleanliness in the workplace. Capable of performing repetitive tasks efficiently, working well both independently and as part of a team, and adapting quickly to factory routines. Punctual, focused, and ready to contribute to daily production goals while following all company rules and safety standards.
+</p>
+<br>
+<br>
+
+<h3>PERSONAL DATA</h3>
+<p>Birthdate: September 2, 2007</p>
+<p>Birthplace: Biñan city</p>
+<p>Age: 18</p>
+<p>Civil Status: Single</p>
+<p>Nationality: Filipino</p>
+<p>Religion: Roman Catholic</p>
+<p>Gender: Male</p>
+<br>
+<br>
+
+<h4>EDUCATION</h4>
+<p>Primary School — 2014 - 2020
+Tubigan Elementary School</p>
+<p>Secondary School — 2020 - 2024
+Biñan Integrated National High School</p>
+<p>Senior High School — 2025 - 2026
+ International Electronics and Technical Institute Inc.</p>
+ <br>
+ <br>
+
+ <h5>SKILLS</h5>
+ <p>Manual labor & lifting</p>
+ <P>Packaging & assembly</P>
+ <p>Following instructions</p>
+ <P>Teamwork & cooperation</P>
+ <P>Safety & cleanliness</P>
+<br>
+<br>
+<title>My QR Code Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+<h2>QR Code Generator</h2>
+
+<input type="text" id="text" placeholder="Enter text or URL">
+<button onclick="generateQR()">Generate QR</button>
+
+<div id="qrcode"></div>
+
+<script>
+function generateQR() {
+    let text = document.getElementById("text").value;
+
+    if (!text) {
+        alert("Please enter text!");
+        return;
+    }
+
+    document.getElementById("qrcode").innerHTML = "";
+
+    new QRCode(document.getElementById("qrcode"), {
+        text: text,
+        width: 200,
+        height: 200
+    });
+}
+</script>
 </body>
-</html>
+</html> 
